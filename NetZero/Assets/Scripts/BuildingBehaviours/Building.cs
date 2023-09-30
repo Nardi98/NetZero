@@ -11,10 +11,7 @@ public class Building : MonoBehaviour
     //[Header("Building cathegory info")]
     //public Building BuildingInfo;
 
-    [Header("Energy production")]
-    [SerializeField] private int _maxProduction;
 
-    public int MaxProduction { get => _maxProduction; set => _maxProduction = value; }
 
     // Start is called before the first frame update
     void Start()

@@ -69,13 +69,43 @@ public class ResourcesManager : MonoBehaviour
 
         for(int i = 0; i < hourlyEnergyRequired.Length; i++)
         {
+            //energy still required. 
             if (hourlyEnergyRequired[i] > hourlyEnergyProduced[i])
             {
-                Debug.Log("energy required" + hourlyEnergyRequired[i] +"energy produced" + hourlyEnergyProduced[i] + "energy insufficient");
+                int energyStillRequired = hourlyEnergyRequired[i] - hourlyEnergyProduced[i];
+
+                //runs throwgh all the controllable power plants maxing out the production of all the needed ones
+                foreach (PowerPlant powerPlant in controllablePlants) { 
+                    
+                    if(energyStillRequired >= powerPlant.MaxProduction && !powerPlant.Paused )
+                    {
+                        energyStillRequired -= powerPlant.MaxProduction;
+                        hourlyEnergyProduced[i] += powerPlant.MaxProduction;
+                        //TODO calculation Cost and CO2 emission
+                    }
+                    else if(energyStillRequired < powerPlant.MaxProduction && !powerPlant.Paused)
+                    {
+                        //TODO calculate cost and CO2 emission
+                        hourlyEnergyProduced[i] += energyStillRequired;
+                        energyStillRequired = 0;
+                        break;
+                    }
+
+                }
+                if(energyStillRequired > 0)
+                {
+                    Debug.Log("BLACKOUT");
+                }
+                else
+                {
+                    Debug.Log("energy required" + hourlyEnergyRequired[i] + "energy produced" + hourlyEnergyProduced[i]);
+                    Debug.Log("Energy requirement met");
+                }
             }
             else
             {
-                Debug.Log("energy required" + hourlyEnergyRequired[i] + "energy produced" + hourlyEnergyProduced[i] + "energy sufficient");
+                
+                Debug.Log("energy required" + hourlyEnergyRequired[i] +"energy produced" + hourlyEnergyProduced[i] + "energy sufficient");
             }
         }
 
@@ -132,6 +162,27 @@ public class ResourcesManager : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    public void DestroyPowerPlant(PowerPlant powerPlant)
+    {
+        if (powerPlant.powerPlantInfo.Pausable != true)
+        {
+            alwaysOnPlants.Remove(powerPlant);
+            //For each hour of the day the ammount of energy produced by the new plant is removed from the produced total 
+            //The ammount of energy total avaliable each hour is computed has
+            //energyAlreadyAvaliable - (energyProducedNew * efficiencyAtThatHour)
+            for (int i = 0; i < baseHourlyEnergyAvaliable.Length; i++)
+            {
+
+                baseHourlyEnergyAvaliable[i] = baseHourlyEnergyAvaliable[i] - (int)(powerPlant.powerPlantInfo.HourlyEfficiency[i] * powerPlant.MaxProduction);
+            }
+
+        }
+        else
+        {
+            controllablePlants.Remove(powerPlant);
         }
     }
 
