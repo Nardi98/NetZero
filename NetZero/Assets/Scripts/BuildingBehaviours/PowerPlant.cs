@@ -7,6 +7,9 @@ public class PowerPlant : Building
 
     [Header("Power Plant info")]
     public PowerPlantInfo powerPlantInfo;
+    protected static int plantsNumber = 0; //number of power plants that have been created until now 
+    private int code; //unique code that identifies this power plant 
+
     [Header("Energy production")]
     [SerializeField] private int _maxProduction;
 
@@ -38,12 +41,16 @@ public class PowerPlant : Building
     }
 
     public bool Producing { get => producing; set => producing = value; }
+    public static int PlantsNumber { get => plantsNumber; }
+    public int Code { get => code; }
+
 
 
     // Start is called before the first frame update
-    void awake()
+    private void Awake()
     {
-
+        plantsNumber++;
+        code = plantsNumber;
     }
 
     // Update is called once per frame

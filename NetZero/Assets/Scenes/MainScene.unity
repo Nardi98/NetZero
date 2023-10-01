@@ -123,63 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &3187142
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4748119750450747061, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_Name
-      value: CoalPowerPlant (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.034777973
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
 --- !u!1 &356973349
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,63 +389,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &646191818
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142429594638946990, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_Name
-      value: NaturalGasPowerPlant (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
 --- !u!1 &762454076
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,177 +434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3117ddb606da294a9bde813ea28e102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1135348585
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142429594638946990, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_Name
-      value: NaturalGasPowerPlant (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
---- !u!1001 &1175956555
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 136819732408513106, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142429594638946990, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
-      propertyPath: m_Name
-      value: NaturalGasPowerPlant (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
---- !u!1001 &1244518706
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4748119750450747061, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_Name
-      value: CoalPowerPlant (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.034777973
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
 --- !u!1 &2128004646
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,8 +464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faaf5a61cd095d46882ee64b62d6b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxProduction: 100000
   powerPlantInfo: {fileID: 11400000, guid: 7d75eb0722cc2ec4b955909f01d78ffb, type: 2}
+  _maxProduction: 100
+  built: 0
 --- !u!212 &2128004648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -870,68 +586,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: NaturalGasPowerPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 8691752271825930304, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
+      propertyPath: _maxProduction
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 444e5bf12cf452a499b9964e750a1822, type: 3}
---- !u!1001 &9133789424751743301
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4748119750450747061, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_Name
-      value: CoalPowerPlant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.300149
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07450873
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.034777973
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338858508026184633, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7253d0515fa96c2478b87e1c80ab0389, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -940,10 +603,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 762454077}
   - {fileID: 2610531227545121992}
-  - {fileID: 9133789424751743301}
-  - {fileID: 1175956555}
-  - {fileID: 3187142}
-  - {fileID: 646191818}
-  - {fileID: 1244518706}
-  - {fileID: 1135348585}
   - {fileID: 2128004649}

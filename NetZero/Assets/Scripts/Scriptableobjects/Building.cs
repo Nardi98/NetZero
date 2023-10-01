@@ -10,6 +10,10 @@ using UnityEngine;
 
 public class BuildingInfo : ScriptableObject
 {
+    [Header("Apperance")]
+    [SerializeField] private Sprite _icon;
+
+
     [Header("Costs")]
     [SerializeField] private int _buildingCost;
     [SerializeField] private int _operationalCost;
@@ -20,10 +24,14 @@ public class BuildingInfo : ScriptableObject
     [SerializeField] private int _buildingTime;
     [SerializeField] private bool _pausable;
 
+
+
+    public Sprite Icon { get => _icon; }
     public int BuildingCost { get => _buildingCost;  }
     public int OperationalCost { get => _operationalCost; }
     public int DestructionCost { get => _destructionCost;  }
     public int EmittedCO2 { get => _emittedCO2;  }
     public int BuildingTime { get => _buildingTime;  }
     public bool Pausable { get => _pausable;  }
+    
 }

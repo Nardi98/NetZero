@@ -28,7 +28,11 @@ public class ResourcesManager : MonoBehaviour
     private List<PowerPlant> controllablePlants = new List<PowerPlant>(); //list of power plants that the manager actually have control on 
     private int[] baseHourlyEnergyAvaliable = new int[24];  //array that defines the hourly energy produced by production plants that can't be switched off
 
+    private int totalCO2Emitted = 0; //Variable that keeps the current value of total CO2 emitted
+    private int oldTotalCO2Emitted = 0; //variable that keeps track of the vaue of CO2 the previous day
+    private int yearCO2Emitted = 0; //variable that keeps track of the CO2 emitted during the year
 
+    public int TotalCO2Emitted { get => totalCO2Emitted; }
 
     private void Start()
     {
@@ -81,11 +85,15 @@ public class ResourcesManager : MonoBehaviour
                     {
                         energyStillRequired -= powerPlant.MaxProduction;
                         hourlyEnergyProduced[i] += powerPlant.MaxProduction;
-                        //TODO calculation Cost and CO2 emission
+                        AddCO2(ComputeEmittedCO2(powerPlant.MaxProduction, powerPlant.powerPlantInfo));
+                        //TODO calculation Cost 
+                        //TODO create event for production
                     }
                     else if(energyStillRequired < powerPlant.MaxProduction && !powerPlant.Paused)
                     {
-                        //TODO calculate cost and CO2 emission
+                        //TODO calculate cost 
+                        //TODO create event for production
+                        AddCO2(ComputeEmittedCO2(energyStillRequired, powerPlant.powerPlantInfo));
                         hourlyEnergyProduced[i] += energyStillRequired;
                         energyStillRequired = 0;
                         break;
@@ -94,23 +102,20 @@ public class ResourcesManager : MonoBehaviour
                 }
                 if(energyStillRequired > 0)
                 {
-                    Debug.Log("BLACKOUT");
+                    //Debug.Log("BLACKOUT");
                 }
                 else
                 {
-                    Debug.Log("energy required" + hourlyEnergyRequired[i] + "energy produced" + hourlyEnergyProduced[i]);
-                    Debug.Log("Energy requirement met");
+                    //Debug.Log("energy required" + hourlyEnergyRequired[i] + "energy produced" + hourlyEnergyProduced[i]);
+                    //Debug.Log("Energy requirement met");
                 }
             }
             else
             {
                 
-                Debug.Log("energy required" + hourlyEnergyRequired[i] +"energy produced" + hourlyEnergyProduced[i] + "energy sufficient");
+                //Debug.Log("energy required" + hourlyEnergyRequired[i] +"energy produced" + hourlyEnergyProduced[i] + "energy sufficient");
             }
         }
-
-
-
 
     }
     
@@ -184,6 +189,17 @@ public class ResourcesManager : MonoBehaviour
         {
             controllablePlants.Remove(powerPlant);
         }
+    }
+
+
+    public int ComputeEmittedCO2(int power, PowerPlantInfo powerPlantType)
+    {
+        return power * powerPlantType.EmittedCO2;
+    }
+
+    public void AddCO2(int emittedCO2)
+    {
+        totalCO2Emitted += emittedCO2;
     }
 
 
