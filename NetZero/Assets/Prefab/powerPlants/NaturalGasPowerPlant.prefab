@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 136819732408513106}
   - component: {fileID: 8587401256164561880}
   - component: {fileID: 8691752271825930304}
+  - component: {fileID: -4403075690071936148}
   m_Layer: 0
   m_Name: NaturalGasPowerPlant
   m_TagString: Untagged
@@ -97,5 +98,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faaf5a61cd095d46882ee64b62d6b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxProduction: 10
   powerPlantInfo: {fileID: 11400000, guid: 4500884d4e0eb764c893efbc29f1628c, type: 2}
+  _maxProduction: 10
+  built: 0
+--- !u!61 &-4403075690071936148
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5142429594638946990}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
