@@ -17,7 +17,7 @@ MonoBehaviour:
   _operationalCost: 0
   _destructionCost: 0
   _emittedCO2: 0
-  _buildingTime: 0
+  _buildingTime: 10
   _pausable: 0
   maxProduction: 0
   hourlyEfficiency:

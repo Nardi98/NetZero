@@ -56,10 +56,12 @@ public class PowerPlant : Building
     // Update is called once per frame
     void Update()
     {
+        
         //checks if it is still building if it is it increase the passed time
         if(built == false)
         {
             timeSpentBuilding += Time.deltaTime;
+            Debug.Log(timeSpentBuilding);
             if(timeSpentBuilding >= powerPlantInfo.BuildingTime)
             {
                 //once that the building is completed it adds it to the list of buildings in the resource manager
@@ -72,6 +74,7 @@ public class PowerPlant : Building
 
     private void FinishedBuilding()
     {
+        
         GameManager.Instance.resourcesManager.AddPowerPlant(this);
         built = true;
     }

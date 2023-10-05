@@ -21,23 +21,28 @@ public class Builder : MonoBehaviour
     {
 
         //Todo fix check if clicked on objects to avoid to build a power plant on another one 
-        Debug.Log(Physics.Raycast(ray));
+        
         if (powerPlantToBeBuilt != null)
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            
-
-            if (Input.GetMouseButtonDown(0) && !Physics.Raycast(ray))
+            Collider2D col = Physics2D.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            if (Input.GetMouseButtonDown(0) && col == null )
             {
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector3Int gridPosition = map.WorldToCell(mousePosition);
                 Vector3 buildingPosition = map.CellToWorld(gridPosition);
 
+                
 
+
+                /* Checks the the type of map that it will build on
+                if (map.GetTile(gridPosition).name.Contains("costal"))
+                {
+                    Debug.Log("At position" + gridPosition + "there is a costal map");
+                }
+                */
 
                 GameObject.Instantiate(powerPlantToBeBuilt, buildingPosition, Quaternion.identity);
-                Debug.Log("build");
-                powerPlantToBeBuilt = null;
+                Debug.Log("build");                powerPlantToBeBuilt = null;
             }
         }
         

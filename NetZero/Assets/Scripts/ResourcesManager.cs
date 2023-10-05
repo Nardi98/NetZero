@@ -132,6 +132,7 @@ public class ResourcesManager : MonoBehaviour
 
     public void AddPowerPlant(PowerPlant powerPlant)
     {
+        Debug.Log("adding a new power plant" + powerPlant.Code);
         //checks if the power plant is always on or not and positions it in the right list
         if (powerPlant.powerPlantInfo.Pausable != true)
         {

@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerPlantInfo: {fileID: 11400000, guid: 7d75eb0722cc2ec4b955909f01d78ffb, type: 2}
   _maxProduction: 100
-  built: 1
+  built: 0
 --- !u!61 &7353709036837781475
 BoxCollider2D:
   m_ObjectHideFlags: 0
