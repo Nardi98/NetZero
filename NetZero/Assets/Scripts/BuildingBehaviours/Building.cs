@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 /* Script that determines the behaviour of building 
@@ -10,6 +11,10 @@ public class Building : MonoBehaviour
 {
     //[Header("Building cathegory info")]
     //public Building BuildingInfo;
+
+
+
+
 
 
 

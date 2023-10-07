@@ -7,8 +7,8 @@ public class Builder : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Tilemap map;
-    private PowerPlant powerPlantToBeBuilt = null; 
-    Ray ray;
+    private PowerPlant powerPlantToBeBuilt = null;
+    public int PowerPlantPower;
 
 
     void Start()
@@ -25,7 +25,7 @@ public class Builder : MonoBehaviour
         if (powerPlantToBeBuilt != null)
         {
             Collider2D col = Physics2D.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            if (Input.GetMouseButtonDown(0) && col == null )
+            if (Input.GetMouseButtonDown(0) && col == null && PowerPlantPower != 0 )
             {
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector3Int gridPosition = map.WorldToCell(mousePosition);
@@ -41,8 +41,11 @@ public class Builder : MonoBehaviour
                 }
                 */
 
-                GameObject.Instantiate(powerPlantToBeBuilt, buildingPosition, Quaternion.identity);
-                Debug.Log("build");                powerPlantToBeBuilt = null;
+                PowerPlant builtPowerPlant = GameObject.Instantiate(powerPlantToBeBuilt, buildingPosition, Quaternion.identity);
+                builtPowerPlant.MaxProduction = PowerPlantPower;
+                GameManager.Instance.resourcesManager.AddFundings(-PowerPlantPower * powerPlantToBeBuilt.powerPlantInfo.BuildingCost);
+                Debug.Log("build");                
+                powerPlantToBeBuilt = null;
             }
         }
         
@@ -51,5 +54,7 @@ public class Builder : MonoBehaviour
     public void build(PowerPlant powerPlant)
     {
         powerPlantToBeBuilt = powerPlant;
+        PowerPlantPower = 0;
     }
+
 }

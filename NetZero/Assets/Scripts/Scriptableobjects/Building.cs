@@ -12,7 +12,7 @@ public class BuildingInfo : ScriptableObject
 {
     [Header("Apperance")]
     [SerializeField] private Sprite _icon;
-
+    [SerializeField] private string _name;
 
     [Header("Costs")]
     [SerializeField] private int _buildingCost;
@@ -33,5 +33,5 @@ public class BuildingInfo : ScriptableObject
     public int EmittedCO2 { get => _emittedCO2;  }
     public int BuildingTime { get => _buildingTime;  }
     public bool Pausable { get => _pausable;  }
-    
+    public string Name { get => _name; set => _name = value; }
 }

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class PowerPlant : Building
-{   
+public class PowerPlant : Building 
+{ 
 
     [Header("Power Plant info")]
     public PowerPlantInfo powerPlantInfo;
@@ -21,9 +22,9 @@ public class PowerPlant : Building
     // variable to manage the production of resources
     private float timeSpentBuilding = 0.0f;  //keeps track of the production process
     private bool producing = false;  //building is producing used for animation
-    private bool paused;  //building is paused. The resource manager can't set it to produce
+    private bool paused = false;  //building is paused. The resource manager can't set it to produce
     
-    public int MaxProduction { get => _maxProduction; }
+   
     public bool Paused
     {
         get => paused;
@@ -43,6 +44,8 @@ public class PowerPlant : Building
     public bool Producing { get => producing; set => producing = value; }
     public static int PlantsNumber { get => plantsNumber; }
     public int Code { get => code; }
+    public int MaxProduction { get => _maxProduction; set => _maxProduction = value; }
+    
 
 
 
@@ -61,7 +64,6 @@ public class PowerPlant : Building
         if(built == false)
         {
             timeSpentBuilding += Time.deltaTime;
-            Debug.Log(timeSpentBuilding);
             if(timeSpentBuilding >= powerPlantInfo.BuildingTime)
             {
                 //once that the building is completed it adds it to the list of buildings in the resource manager
@@ -79,10 +81,26 @@ public class PowerPlant : Building
         built = true;
     }
 
+    //functions accessible from the UI to pause and restart the power plant energy production 
+    public void PausePowerPlant()
+    {
+        paused = true;
+    }
+
+    public void RestartPowerPlant()
+    {
+        paused = false;
+    }
     //on destroy it removes the building from the list of buildings in the resource manager
     public void OnDestroy()
     {
         GameManager.Instance.resourcesManager.DestroyPowerPlant(this);
     }
 
+    void OnMouseDown()
+    {
+        Debug.Log("clicked");       
+    }
+
+     
 }

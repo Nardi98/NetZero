@@ -32,7 +32,9 @@ public class ResourcesManager : MonoBehaviour
     private int oldTotalCO2Emitted = 0; //variable that keeps track of the vaue of CO2 the previous day
     private int yearCO2Emitted = 0; //variable that keeps track of the CO2 emitted during the year
 
+    private int fundings = 1000; //Avaliable fundings in milions
     public int TotalCO2Emitted { get => totalCO2Emitted; }
+    public int Fundings { get => fundings; }
 
     private void Start()
     {
@@ -201,6 +203,11 @@ public class ResourcesManager : MonoBehaviour
     public void AddCO2(int emittedCO2)
     {
         totalCO2Emitted += emittedCO2;
+    }
+
+    public void AddFundings(int newFunds)
+    {
+        fundings += newFunds;
     }
 
 

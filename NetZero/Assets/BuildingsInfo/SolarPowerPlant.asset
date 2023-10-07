@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: SolarPowerPlant
   m_EditorClassIdentifier: 
   _icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  _buildingCost: 0
+  _name: Solar power plant
+  _buildingCost: 100
   _operationalCost: 0
   _destructionCost: 0
   _emittedCO2: 0
