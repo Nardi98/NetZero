@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
     //public AudioManager AudioManager { get; private set; }
     public ResourcesManager resourcesManager { get; private set; }
     public Builder builder { get; private set; }
+    
+    private UIManager uiManager;
+    public UIManager UiManager { get => uiManager; set => uiManager = value; }
+
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -26,6 +31,7 @@ public class GameManager : MonoBehaviour
         //AudioManager = GetComponentInChildren<AudioManager>();
         resourcesManager = GetComponentInChildren<ResourcesManager>();
         builder = GetComponentInChildren<Builder>();
+        uiManager = GetComponentInChildren<UIManager>();
     }
 
 

@@ -99,6 +99,7 @@ public class PowerPlant : Building
 
     void OnMouseDown()
     {
+        GameManager.Instance.UiManager.ChangePowerPlantSettings(this);
         Debug.Log("clicked");       
     }
 

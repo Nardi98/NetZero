@@ -18,6 +18,7 @@ public class BuildingInfo : ScriptableObject
     [SerializeField] private int _buildingCost;
     [SerializeField] private int _operationalCost;
     [SerializeField] private int _destructionCost;
+    [SerializeField] private int _pausedOperationaCost;
 
     [Space(20)]
     [SerializeField] private int _emittedCO2;
@@ -34,4 +35,5 @@ public class BuildingInfo : ScriptableObject
     public int BuildingTime { get => _buildingTime;  }
     public bool Pausable { get => _pausable;  }
     public string Name { get => _name; set => _name = value; }
+    public int PausedOperationaCost { get => _pausedOperationaCost; }
 }
